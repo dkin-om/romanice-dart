@@ -1,0 +1,21 @@
+language: dart
+dart:
+  - 'stable'
+install:
+  - dart pub get
+before_script:
+  - dart pub global activate coverage
+  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+  - nvm install 14
+  - npm install -g coveralls
+script:
+  - dart analyze --fatal-infos --fatal-warnings
+  - dart test --platform=vm --coverage=coverage
+  - dart pub global run coverage:format_coverage --packages=.packages --in=coverage/test/ --out=coverage/lcov.info --report-on=lib/ --lcov --check-ignore
+  - cat coverage/lcov.info | coveralls
+# deploy:
+#   provider: script
+#   on:
+#     dart: 'stable'
+#     tags: true
+#     repo: dkin-om/romanice-dart

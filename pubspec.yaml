@@ -1,0 +1,10 @@
+name: romanice
+version: 1.0.0-beta.0
+description: Convert to/from Roman numerals
+repository: https://github.com/dkin-om/romanice-dart.git
+issue_tracker: https://github.com/dkin-om/romanice-dart/issues
+homepage: https://github.com/dkin-om/romanice-dart#readme
+environment:
+  sdk: '>=2.8.1 <3.0.0'
+dev_dependencies:
+  test: ^1.14.4

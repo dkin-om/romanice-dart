@@ -1,0 +1,30 @@
+import 'package:romanice/romanice.dart';
+
+final Map<String, dynamic> dkinomConverter = <String, dynamic>{
+  'instance': Romanice(<String>['D', 'K', 'I', 'N', 'O', 'M']),
+  'testCases': <Map<String, dynamic>>[
+    <String, dynamic>{'decimal': 0, 'roman': ''},
+    <String, dynamic>{'decimal': 1, 'roman': 'D'},
+    <String, dynamic>{'decimal': 2, 'roman': 'DD'},
+    <String, dynamic>{'decimal': 3, 'roman': 'DDD'},
+    <String, dynamic>{'decimal': 4, 'roman': 'DK'},
+    <String, dynamic>{'decimal': 5, 'roman': 'K'},
+    <String, dynamic>{'decimal': 6, 'roman': 'KD'},
+    <String, dynamic>{'decimal': 7, 'roman': 'KDD'},
+    <String, dynamic>{'decimal': 8, 'roman': 'KDDD'},
+    <String, dynamic>{'decimal': 9, 'roman': 'DI'},
+    <String, dynamic>{'decimal': 10, 'roman': 'I'},
+    <String, dynamic>{'decimal': 11, 'roman': 'ID'},
+    <String, dynamic>{'decimal': 12, 'roman': 'IDD'},
+    <String, dynamic>{'decimal': 39, 'roman': 'IIIDI'},
+    <String, dynamic>{'decimal': 50, 'roman': 'N'},
+    <String, dynamic>{'decimal': 100, 'roman': 'O'},
+    <String, dynamic>{'decimal': 160, 'roman': 'ONI'},
+    <String, dynamic>{'decimal': 207, 'roman': 'OOKDD'},
+    <String, dynamic>{'decimal': 246, 'roman': 'OOINKD'},
+    <String, dynamic>{'decimal': 500, 'roman': 'M'},
+    <String, dynamic>{'decimal': 789, 'roman': 'MOONIIIDI'},
+    <String, dynamic>{'decimal': 888, 'roman': 'MOOONIIIKDDD'},
+    <String, dynamic>{'decimal': 899, 'roman': 'MOOOIODI'},
+  ],
+};

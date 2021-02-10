@@ -1,3 +1,5 @@
+##### https://github.com/github/gitignore/blob/218a941be92679ce67d0484547e3e142b2f5f6f0/Dart.gitignore #####
+
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
@@ -19,3 +21,10 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+.flutter-plugins
+.flutter-plugins-dependencies
+
+##### additional Dart.gitignore #####
+
+coverage/
