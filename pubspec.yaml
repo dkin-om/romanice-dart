@@ -1,6 +1,6 @@
 name: romanice
-version: 1.0.0
-description: A Dart library for converting to/from Roman numerals, e.g., `3888`↔`MMMDCCCLXXXVIII`, `38888`↔`ↂↂↂↁↀↀↀⅮⅭⅭⅭⅬⅩⅩⅩⅤⅠⅠⅠ`
+version: 1.0.0+1
+description: A Dart library for converting to/from Roman numerals, e.g., 3888 ↔ MMMDCCCLXXXVIII
 repository: https://github.com/dkin-om/romanice-dart.git
 issue_tracker: https://github.com/dkin-om/romanice-dart/issues
 homepage: https://github.com/dkin-om/romanice-dart#readme
