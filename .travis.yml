@@ -13,9 +13,11 @@ script:
   - dart test --platform=vm --coverage=coverage
   - dart pub global run coverage:format_coverage --packages=.packages --in=coverage/test/ --out=coverage/lcov.info --report-on=lib/ --lcov --check-ignore
   - cat coverage/lcov.info | coveralls
-# deploy:
-#   provider: script
-#   on:
-#     dart: 'stable'
-#     tags: true
-#     repo: dkin-om/romanice-dart
+  - dart pub publish --dry-run
+deploy:
+  provider: script
+  script: dart pub publish --force
+  on:
+    dart: 'stable'
+    tags: true
+    repo: dkin-om/romanice-dart
