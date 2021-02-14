@@ -7,7 +7,7 @@ before_script:
   - dart pub global activate coverage
   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
   - nvm install 14
-  - npm install -g coveralls
+  - npm install -g coveralls@^3.1.0
 script:
   - dart analyze --fatal-infos --fatal-warnings
   - dart test --platform=vm --coverage=coverage
