@@ -9,35 +9,37 @@ A Dart library for converting to/from Roman numerals, e.g., `3888`↔`MMMDCCCLXX
 
 ## Usage
 
-See `example/romanice_example.dart`
+See `example/main.dart`
 
 ### Standard - `I`, `V`, `X`, `L`, `C`, `D`, `M`
 
 ```dart
-final Romanice standardConverter = Romanice();
+final ToRoman standardToRoman = ToRoman();
 
-final String roman = standardConverter.toRoman(3888);
+final String roman = standardToRoman(3888);
 // roman == 'MMMDCCCLXXXVIII'
 
-final int decimal = standardConverter.fromRoman('MMMCMXCIX');
+final int decimal = standardToRoman.inverse()('MMMCMXCIX');
 // decimal == 3999
 ```
 
 ### Unicode - `Ⅰ`, `Ⅴ`, `Ⅹ`, `Ⅼ`, `Ⅽ`, `Ⅾ`, `ↀ`, `ↁ`, `ↂ`
 
 ```dart
-final Romanice unicodeConverter = Romanice.unicode();
+final FromRoman unicodeFromRoman = FromRoman.unicode();
 
-final String roman = unicodeConverter.toRoman(38888);
+final String roman = unicodeFromRoman.inverse()(38888);
 // roman == 'ↂↂↂↁↀↀↀⅮⅭⅭⅭⅬⅩⅩⅩⅤⅠⅠⅠ'
 
-final int decimal = unicodeConverter.fromRoman('ↂↂↂↀↂⅭↀⅩⅭⅠⅩ');
+final int decimal = unicodeFromRoman('ↂↂↂↀↂⅭↀⅩⅭⅠⅩ');
 // decimal == 39999
 ```
 
 ## Syntax
 
-### *`Romanice([List<String> _symbols])`*
+### *`ToRoman([List<String> _symbols])`*
+
+### *`FromRoman([List<String> _symbols])`*
 
 *`_symbols`* - List of Roman numeral symbols representing the character set. If omitted, assumes the standard symbols `['I', 'V', 'X', 'L', 'C', 'D', 'M']`.
 

@@ -1,7 +1,7 @@
 import 'package:romanice/romanice.dart';
 
 final Map<String, dynamic> standardConverter = <String, dynamic>{
-  'instance': Romanice.standard(),
+  'fromRoman': FromRoman.standard(),
   'testCases': <Map<String, dynamic>>[
     <String, dynamic>{'decimal': 0, 'roman': ''},
     <String, dynamic>{'decimal': 1, 'roman': 'I'},
