@@ -26,12 +26,8 @@ const List<String> unicodeSymbols = <String>[
 
 /// Checks if [symbols] is a valid charset
 bool areValidSymbols(List<String> symbols) {
-  if (symbols.isEmpty) return false;
-  final Map<String, bool> cache = <String, bool>{};
-  return symbols.every((String s) {
-    cache[s] = cache[s] == null;
-    return cache[s]!;
-  });
+  if (symbols.isEmpty || symbols.length != symbols.toSet().length) return false;
+  return symbols.every((String s) => s.length == 1);
 }
 
 /// Returns the decimal value of the symbol at index [idx]

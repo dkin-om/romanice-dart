@@ -10,7 +10,7 @@ class ToRoman extends InvertibleFunction<int, String> {
       : _biggestRepresentableNumber =
             biggestRepresentableNumber(_symbols.length) {
     if (!areValidSymbols(_symbols)) {
-      throw ArgumentError.value(_symbols, '_symbols',
+      throw ArgumentError.value(_symbols, 'symbols',
           'Invalid charset, symbols must be non-empty and distinct, e.g. I, V, X, L, C, D, M');
     }
   }
