@@ -1,7 +1,7 @@
 import 'package:romanice/romanice.dart';
 
 final Map<String, dynamic> unicodeConverter = <String, dynamic>{
-  'instance': Romanice.unicode(),
+  'fromRoman': FromRoman.unicode(),
   'testCases': <Map<String, dynamic>>[
     <String, dynamic>{'decimal': 0, 'roman': ''},
     <String, dynamic>{'decimal': 1, 'roman': 'Ⅰ'},

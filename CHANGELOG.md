@@ -1,3 +1,8 @@
+## 2.0.0-nullsafety.0
+
+- Migrated to null safety
+- Replaced `Romanice` class with `ToRoman` and `FromRoman` classes, these are `InvertibleFunction`s
+
 ## 1.0.0+1
 
 - Updated `description` in `pubspec.yaml`

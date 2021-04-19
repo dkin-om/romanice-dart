@@ -11,19 +11,25 @@ void main() {
 }
 
 void testConverter(Map<String, dynamic> converter) {
-  group('toRoman', () {
+  if (converter['toRoman'] != null) {
+    converter['fromRoman'] = converter['toRoman'].inverse();
+  } else if (converter['fromRoman'] != null) {
+    converter['toRoman'] = converter['fromRoman'].inverse();
+  }
+
+  group('ToRoman', () {
     converter['testCases'].forEach((Map<String, dynamic> testCase) {
       test('${testCase['decimal']} -> ${testCase['roman']}', () {
-        expect(converter['instance'].toRoman(testCase['decimal']),
+        expect(converter['toRoman'](testCase['decimal']),
             equals(testCase['roman']));
       });
     });
   });
 
-  group('fromRoman', () {
+  group('FromRoman', () {
     converter['testCases'].forEach((Map<String, dynamic> testCase) {
       test('${testCase['roman']} -> ${testCase['decimal']}', () {
-        expect(converter['instance'].fromRoman(testCase['roman']),
+        expect(converter['fromRoman'](testCase['roman']),
             equals(testCase['decimal']));
       });
     });

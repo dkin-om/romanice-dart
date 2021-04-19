@@ -1,7 +1,7 @@
 import 'package:romanice/romanice.dart';
 
 final Map<String, dynamic> dkinomConverter = <String, dynamic>{
-  'instance': Romanice(<String>['D', 'K', 'I', 'N', 'O', 'M']),
+  'toRoman': ToRoman(<String>['D', 'K', 'I', 'N', 'O', 'M']),
   'testCases': <Map<String, dynamic>>[
     <String, dynamic>{'decimal': 0, 'roman': ''},
     <String, dynamic>{'decimal': 1, 'roman': 'D'},
