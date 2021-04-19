@@ -1,3 +1,8 @@
+## 2.0.0-nullsafety.1
+
+- Fixed `areValidSymbols` function
+- Added more test cases
+
 ## 2.0.0-nullsafety.0
 
 - Migrated to null safety

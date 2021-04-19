@@ -9,7 +9,7 @@ class FromRoman extends InvertibleFunction<String, int> {
   FromRoman([this._symbols = standardSymbols])
       : _romanNumeralRegExp = romanNumeralRegExp(_symbols) {
     if (!areValidSymbols(_symbols)) {
-      throw ArgumentError.value(_symbols, '_symbols',
+      throw ArgumentError.value(_symbols, 'symbols',
           'Invalid charset, symbols must be non-empty and distinct, e.g. I, V, X, L, C, D, M');
     }
   }

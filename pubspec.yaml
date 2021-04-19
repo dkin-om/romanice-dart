@@ -1,5 +1,5 @@
 name: romanice
-version: 2.0.0-nullsafety.0
+version: 2.0.0-nullsafety.1
 description: A Dart library for converting to/from Roman numerals, e.g., 3888 ↔ MMMDCCCLXXXVIII
 repository: https://github.com/dkin-om/romanice-dart.git
 issue_tracker: https://github.com/dkin-om/romanice-dart/issues
