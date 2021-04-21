@@ -32,6 +32,8 @@ class ToRoman extends InvertibleFunction<int, String> {
 
   @override
   String valueAt(int x) {
+    if (x == 0) return '';
+
     final List<String> result = <String>[];
 
     int n = x;
