@@ -11,6 +11,6 @@ before_script:
 script:
   - dart analyze --fatal-infos --fatal-warnings
   - dart test --platform=vm --coverage=coverage
-  - dart pub global run coverage:format_coverage --packages=.packages --in=coverage/test/ --out=coverage/lcov.info --report-on=lib/ --lcov --check-ignore
+  - dart pub global run coverage:format_coverage --packages=.dart_tool/package_config.json --in=coverage/test/ --out=coverage/lcov.info --report-on=lib/ --lcov --check-ignore
   - cat coverage/lcov.info | coveralls
   - dart pub publish --dry-run

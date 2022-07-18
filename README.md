@@ -1,7 +1,7 @@
 # romanice - Convert to/from Roman numerals
 
 [![Version](https://img.shields.io/pub/v/romanice)](https://pub.dev/packages/romanice)
-[![Build Status](https://travis-ci.com/dkin-om/romanice-dart.svg?branch=master)](https://travis-ci.com/dkin-om/romanice-dart)
+[![Build Status](https://travis-ci.com/dkin-om/romanice-dart.svg?branch=master)](https://app.travis-ci.com/github/dkin-om/romanice-dart)
 [![Coverage Status](https://coveralls.io/repos/github/dkin-om/romanice-dart/badge.svg)](https://coveralls.io/github/dkin-om/romanice-dart)
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/dkin-om/romanice-dart/blob/master/LICENSE)
 
